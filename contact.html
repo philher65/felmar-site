@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | FELMAR FEDERAL SOLUTIONS LLC</title>
+<meta name="description" content="Contact FELMAR FEDERAL SOLUTIONS LLC. General questions: info@felmarfederalsolutions.us. RFQs and solicitations: contracts@felmarfederalsolutions.us.">
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo-seal-256.png" alt="FELMAR FEDERAL SOLUTIONS LLC seal">
+      <span class="brand-text">
+        <strong>FELMAR FEDERAL SOLUTIONS</strong>
+        <span>Federal Supply Vendor</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding: 46px 0;">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>Send an RFQ, Solicitation, or Question.</h1>
+    <p class="lede" style="max-width: 700px;">Every inquiry receives direct attention from FFS's sole member, providing clear communication and accountability from first contact through delivery.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid split-44">
+      <div>
+        <h2>Direct Contact</h2>
+        <div class="contact-block">
+          <h3>General Inquiries</h3>
+          <p>Questions about FFS, our capabilities, or potential business relationships?</p>
+          <a href="mailto:info@felmarfederalsolutions.us">info@felmarfederalsolutions.us</a>
+        </div>
+        <div class="contact-block">
+          <h3>RFQs &amp; Solicitations</h3>
+          <p>Send solicitation numbers, item lists, specifications, quantities, and delivery requirements to:</p>
+          <a href="mailto:contracts@felmarfederalsolutions.us">contracts@felmarfederalsolutions.us</a>
+        </div>
+        <ul class="contact-list">
+          <li><span class="label">Phone</span><a href="tel:+17868509996">(786) 850-9996</a></li>
+          <li><span class="label">Location</span><span>Tamarac, Florida</span></li>
+        </ul>
+        <div class="callout callout-white" style="margin-top: 24px;">
+          <h3 style="margin-bottom: 8px;">For Faster Quote Review</h3>
+          <p style="margin: 0;">Include the solicitation or RFQ number, applicable NAICS or PSC code, item numbers, specifications, quantities, delivery location, and required delivery date whenever available.</p>
+          <ul class="checklist">
+            <li>Solicitation or RFQ number</li>
+            <li>Item number or specification</li>
+            <li>Quantity</li>
+            <li>Delivery location</li>
+            <li>Required delivery date</li>
+            <li>Applicable NAICS or PSC code</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>Send a Message</h2>
+        <p>Use the form for general questions or to prepare an RFQ or solicitation email. Select the inquiry type so your message is addressed appropriately.</p>
+        <form class="contact-form" id="ffs-contact-form" novalidate>
+          <p class="form-note">All fields are required unless marked optional.</p>
+
+          <div class="field">
+            <label for="inquiry-type">Inquiry Type</label>
+            <select id="inquiry-type" name="inquiry-type" required aria-describedby="route-note err-inquiry-type">
+              <option value="">Select an inquiry type</option>
+              <option value="general">General Question</option>
+              <option value="rfq">RFQ or Solicitation</option>
+              <option value="vendor">Vendor or Supplier Inquiry</option>
+              <option value="other">Other</option>
+            </select>
+            <p class="form-note" id="route-note" style="margin-top: 6px;">Your email will be addressed to the inbox that matches your inquiry type.</p>
+            <p class="field-error" id="err-inquiry-type" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="err-name">
+            <p class="field-error" id="err-name" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="org">Organization or Agency <span class="opt">(Optional)</span></label>
+            <input type="text" id="org" name="org" autocomplete="organization">
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="err-email">
+            <p class="field-error" id="err-email" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone <span class="opt">(Optional)</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+
+          <div class="field">
+            <label for="solicitation">Solicitation or RFQ Number <span class="opt">(Optional)</span></label>
+            <input type="text" id="solicitation" name="solicitation">
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required aria-describedby="err-message"></textarea>
+            <p class="field-error" id="err-message" hidden></p>
+          </div>
+
+          <button type="submit" class="btn btn-gold" style="align-self: flex-start;">Prepare Email</button>
+          <p class="form-note">This will open your email application with the information entered above. You can review the message and attach supporting documents before sending.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+          <p class="form-note">Need to send an item list, specification, or solicitation document? Prepare the email and attach the documents in your email application before sending.</p>
+          <p class="form-notice">Do not submit controlled, classified, export-controlled, or other sensitive information through this website.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/img/logo-seal-256.png" alt="FELMAR FEDERAL SOLUTIONS LLC seal">
+        <div class="footer-brand-text">
+          <strong>FELMAR FEDERAL SOLUTIONS&nbsp;LLC</strong>
+          <span>Federal Supply Vendor</span>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="capabilities.html">Capabilities</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <span class="fc-label">General Inquiries</span>
+          <a href="mailto:info@felmarfederalsolutions.us">info@felmarfederalsolutions.us</a>
+          <span class="fc-label">RFQs &amp; Solicitations</span>
+          <a href="mailto:contracts@felmarfederalsolutions.us">contracts@felmarfederalsolutions.us</a>
+          <a href="tel:+17868509996">(786) 850-9996</a>
+        </div>
+        <div class="footer-col">
+          <h3>Location</h3>
+          <p>Tamarac, Florida</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 FELMAR FEDERAL SOLUTIONS LLC. All rights reserved.</span>
+      <span>Florida LLC &middot; UEI URS6VR6JLAV6 &middot; CAGE 25GG7</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+<script src="assets/contact-form.js"></script>
+</body>
+</html>
